@@ -1,0 +1,48 @@
+.footer-bg {
+    background-color: #000000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-main-text {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: white;
+    margin-top: 2vh;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #a1a0a0;
+    margin-top: 1vh;
+}
+
+.footer-text-second {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #a1a0a0;
+    width: 60%;
+    margin-top: 3vh;
+}
+
+.footer-map {
+    width: 100%;
+    height: 300px;
+}
+
+@media(max-width:765px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-map {
+        padding-top: 20px;
+    }
+}

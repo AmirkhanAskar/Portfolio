@@ -1,0 +1,175 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about-peppers {
+    height: 100%;
+}
+
+.about-left-words {
+    width: 52%;
+    margin-top: 30px;
+}
+
+.about-main-text {
+    font-size: 45px;
+    color: #0a0909;
+    font-family: 'Oleo Script Swash Caps';
+}
+
+.about-second-text {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #676767;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #a1a0a0;
+    line-height: 1.5;
+}
+
+.pricing-bg {
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+}
+
+.pricing-upper {
+    padding-top: 80px;
+    text-align: center;
+    line-height: 1.7;
+    padding-bottom: 25px;
+}
+
+.pricing-main-text {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Oleo Script Swash Caps', display;
+}
+
+.pricing-text {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #676767;
+}
+
+.pricing-lower {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-content {
+    line-height: 2.3;
+}
+
+.pricing-foodname {
+    font-size: 22px;
+    color: #0a0909;
+    font-weight: 400;
+    font-family: 'Oleo Script Swash Caps', display;
+}
+
+.pricing-fooddescription {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #a1a0a0;
+}
+
+.pricing-foodcost {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ba2a22;
+    font-family: 'Oleo Script Swash Caps', display;
+}
+
+@media(max-width: 850px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left-words {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .pricing-main-text {
+        font-size: 40px;
+    }
+    .pricing-text {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 555px) {
+    .about-main-text {
+        font-size: 35px;
+        color: #0a0909;
+        font-family: 'Oleo Script Swash Caps';
+    }
+    .about-second-text {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: #676767;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .about-text {
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+        color: #a1a0a0;
+        line-height: 1.5;
+    }
+    .pricing-main-text {
+        font-size: 30px;
+    }
+    .pricing-text {
+        font-size: 14px;
+    }
+}
+
+@media ( max-width: 620px) {
+    .pricing-main-text {
+        font-size: 35px;
+    }
+    .pricing-text {
+        font-size: 15px;
+    }
+    .pricing-foodname {
+        font-size: 18px;
+    }
+    .pricing-fooddescription {
+        font-size: 12px;
+    }
+    .pricing-foodcost {
+        font-size: 15px;
+    }
+    .pricing-main-text {
+        font-size: 32px;
+    }
+    .pricing-text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 790px) {
+    .pricing-lower {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #pricing-lower-feature {
+        width: 100%;
+    }
+    .pricing-main-text {
+        font-size: 36px;
+    }
+    .pricing-text {
+        font-size: 17px;
+    }
+}

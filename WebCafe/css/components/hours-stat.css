@@ -1,0 +1,128 @@
+.hours-stat-bg {
+    background-image: url('../../images/backgrounds/hours-stat-bg.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.hours-stat {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hours-stat-texts {
+    line-height: 2;
+}
+
+.hours-upper-text {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: 'Oleo Script Swash Caps', display;
+    color: #ffffff;
+}
+
+.hours-middle-text {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.hours-boxes {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.hour-stat-box {
+    width: calc(100% / 4 - 3%);
+    height: 24vh;
+    background-color: #ba2a22;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour-stat-box-number {
+    font-size: 60px;
+    font-family: 'Oleo Script Swash Caps', display;
+    color: #ffffff;
+}
+
+.hour-stat-box-decs {
+    font-size: 22px;
+    font-family: 'Oleo Script Swash Caps', display;
+    color: #ffffff;
+}
+
+.hours-between-colon {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+@media(max-width:1000px) {
+    .hours-upper-text {
+        font-size: 45px;
+    }
+    .hour-stat-box-number {
+        font-size: 53px;
+    }
+    .hour-stat-box-decs {
+        font-size: 20px;
+    }
+    .hour-stat-box {
+        height: 20vh;
+    }
+}
+
+@media(max-width:800px) {
+    .hours-upper-text {
+        font-size: 40px;
+    }
+    .hour-stat-box-number {
+        font-size: 48px;
+    }
+    .hour-stat-box-decs {
+        font-size: 18px;
+    }
+    .hour-stat-box {
+        height: 17vh;
+    }
+}
+
+@media(max-width:600px) {
+    .hours-upper-text {
+        font-size: 32px;
+    }
+    .hour-stat-box-number {
+        font-size: 43px;
+    }
+    .hour-stat-box-decs {
+        font-size: 15px;
+    }
+    .hour-stat-box {
+        height: 15vh;
+    }
+}
+
+@media(max-width:400px) {
+    .hours-upper-text {
+        font-size: 27px;
+    }
+    .hour-stat-box-number {
+        font-size: 38px;
+    }
+    .hour-stat-box-decs {
+        font-size: 12px;
+    }
+    .hour-stat-box {
+        height: 12vh;
+    }
+}

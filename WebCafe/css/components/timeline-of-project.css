@@ -1,0 +1,78 @@
+.timeline-of-project {
+    background-color: #f2f2f2;
+}
+
+.timeline-lower-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-lower-first {
+    width: 17%;
+    line-height: 2.7;
+}
+
+.timeline-lower-first-text {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.timeline-lower-first-text:hover {
+    border-bottom: #ba2a22 solid 2px;
+}
+
+.timeline-lower-second {
+    width: 30%;
+    object-fit: cover;
+}
+
+.timeline-lower-third {
+    width: 47%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #676767;
+}
+
+.timeline-lower-third-text1 {
+    margin-bottom: 2vh;
+    line-height: 1.5;
+}
+
+.timeline-lower-third-text2 {
+    margin-bottom: 2vh;
+    line-height: 1.5;
+}
+
+.timeline-lower-third-text3 {
+    line-height: 1.5;
+}
+
+@media(max-width:765px) {
+    .timeline-lower-part {
+        display: flex;
+        flex-direction: column;
+    }
+    .timeline-lower-first {
+        width: 50%;
+        font-size: 14px;
+    }
+    .timeline-lower-second {
+        width: 100%;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .timeline-lower-third {
+        width: 100%;
+        font-size: 14px;
+    }
+    .timeline-lower-first-text {
+        font-size: 17px;
+    }
+    .timeline-lower-first {
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebCafe/css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>MyCafe</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="modal-content">
+
+            <div class="going-out">
+                <button class="going-out-btn" onclick="closeModal()">x</button>
+            </div>
+
+            <div class="modal-left-content">
+                <div class="modal-left-main-text">
+                    Subscribe
+                </div>
+
+                <div class="modal-left-second-text">
+                    For our latest Updates
+                </div>
+                <div class="modal-left-text">
+                    Stay aware of the latest news, and get free advice on how to manage your business right to your inbox.
+                </div>
+
+                <textarea name="Email" id="" cols="40" rows="1" placeholder="Email*" class="textarea-of-modal" required></textarea>
+
+                <div class="modal-header-btn">
+                    <a href="#" class="header-button">Subscribe</a>
+                </div>
+
+
+            </div>
+
+            <img src="WebCafe/images/widgets/your-career-main.jpg" alt="modal img" class="main-modal-img">
+
+        </div>
+    </div>
+
+
+
+    <div class="modal-photos">
+        <div class="modal-photos-content">
+
+            
+            <div class="close-btn">
+                <button class="closing-btn" onclick="this.parentElement.parentElement.parentElement.style.display = 'none'">x</button>
+            </div>
+
+            <div class="modal-photos-configuration">
+                <div class="modal-photos-left" onclick="nextImg(-1)"><i class="fas fa-chevron-left" id="modal-photos-selectors"></i></div>
+                <img src="" alt="modal img" class="main-modal-photos-img">
+                <div class="modal-photos-left"  onclick="nextImg(+1)"><i class="fas fa-chevron-right" id="modal-photos-selectors"></i></div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+
+    <div class="header">
+        <div class="navs container">
+
+            <div class="logo-name">
+                <img src="WebCafe/images/widgets/logoFirst.png" alt="logo" class="logo-img">
+                <h2 class="header-main-logo">MyCafe</h2>
+            </div>
+
+            <div class="navs-main">
+                <a class="navs-main-buttons" href="#">Gallery</a>
+                <a class="navs-main-buttons" href="#">Pricing</a>
+                <a class="navs-main-buttons" href="#">Contacts</a>
+                <a class="navs-main-buttons" href="#">All blocks</a>
+            </div>
+
+            <div class="mobile-navs-all">
+                <div class="mobile-navs fas fa-bars" onclick="OpenMobileNavs()">
+
+                </div>
+    
+                <div class="mobile-navs-options">
+                    <div class="mobile-navs-options-words" >Gallery</div>
+                    <div class="mobile-navs-options-words">Pricing</div>
+                    <div class="mobile-navs-options-words">Contacts</div>
+                    <div class="mobile-navs-options-words">All blocks</div>
+                </div>
+            </div>
+            
+
+            <div class="navs-phone-number">
+                <i class="fas fa-phone-alt" id="header-phone"></i>
+                <a href="tel: (123) 456-7890" class="header-phone-main">(123) 456-7890</a>
+            </div>
+
+        </div>
+
+
+        <div class="header-middle">
+            <h3 class="header-middle-maintext">
+                Title of Your Product, Service or Event
+            </h3>
+
+            <p class="header-middle-text">It's <span id="outText"></span> |</p>
+
+            <a href="#" class="header-button">Call2Action</a>
+
+        </div>
+    </div>
+
+    <div class="about container">
+
+        <img src="WebCafe/images/widgets/about-peppers.png" alt="peppers" class="about-peppers">
+
+        <div class="about-left-words">
+
+            <div class="about-main-text">
+                Tell More About Your Project
+            </div>
+
+            <div class="about-second-text">
+                Add subtitles to your text to make it more readable
+
+            </div>
+
+            <div class="about-text">
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+            </div>
+
+        </div>
+
+    </div>
+    <div class="pricing-bg">
+        <div class="pricing container">
+            <div class="pricing-upper">
+
+                <div class="pricing-main-text">
+                    Show Your Pricing Plans
+                </div>
+
+                <div class="pricing-text">
+                    Let your visitors compare and choose the most suitable variant
+                </div>
+
+            </div>
+
+            <div class="pricing-lower">
+
+                <div class="features-content" id="pricing-lower-feature">
+                    <img src="WebCafe/images/widgets/pricing1.jpg" alt="pricing-photo" class="features-img">
+                    <p class="pricing-foodname">Shrimp Scampi</p>
+                    <p class="pricing-fooddescription">with garlic cloves, shrimps, and dry white wine</p>
+                    <p class="pricing-foodcost">$6.00</p>
+                </div>
+
+                <div class="features-content" id="pricing-lower-feature">
+                    <img src="WebCafe/images/widgets/pricing2.jpg" alt="pricing-photo" class="features-img">
+                    <p class="pricing-foodname">Grand champion pear</p>
+                    <p class="pricing-fooddescription">with truffles & hollandaise</p>
+                    <p class="pricing-foodcost">$7.00</p>
+                </div>
+
+                <div class="features-content" id="pricing-lower-feature">
+                    <img src="WebCafe/images/widgets/pricing3.jpg" alt="pricing-photo" class="features-img">
+                    <p class="pricing-foodname">Prosciutto and French Fries</p>
+                    <p class="pricing-fooddescription">sunny side up egg on breaded pork chops</p>
+                    <p class="pricing-foodcost">$8.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+
+        <div class="pricing-upper">
+
+            <div class="pricing-main-text">
+                Your Main Features & Benefits
+            </div>
+
+            <div class="pricing-text">
+                We are sure that your product, service or event has plenty of advantages.
+            </div>
+
+        </div>
+
+        <div class="pricing-lower container" id="features-img-pricing-lower">
+
+            <div class="features-content" id="features-content2">
+                <div class="image-box-for-features">
+
+                    <img src="WebCafe/images/widgets/benefit1.png" alt="pricing-photo" class="features-img">
+
+                </div>
+                <p class="pricing-foodname" id="pricing-foodname2">Benefit 1</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+
+            <div class="features-content" id="features-content2">
+                <div class="image-box-for-features">
+                    <img src="WebCafe/images/widgets/benefit2.png" alt="pricing-photo" class="features-img">
+
+                </div>
+                <p class="pricing-foodname" id="pricing-foodname2">Benefit 2</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+
+            <div class="features-content" id="features-content2">
+                <div class="image-box-for-features">
+                    <img src="WebCafe/images/widgets/benefit3.png" alt="pricing-photo" class="features-img">
+                </div>
+                <p class="pricing-foodname" id="pricing-foodname2">Benefit 3</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+
+            <div class="features-content" id="features-content2">
+                <div class="image-box-for-features">
+                    <img src="WebCafe/images/widgets/benefit4.png" alt="pricing-photo" class="features-img">
+                </div>
+                <p class="pricing-foodname" id="pricing-foodname2">Benefit 4</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tell-visitors-bg">
+        <div class="tell-visitors container">
+            <p class="tell-visitors-text">Tell your visitors about time limited offer with 50% OFF. It will raise the conversion!</p>
+            <a href="#" class="header-button" id="tell-visitors-button">Call2Action</a>
+        </div>
+    </div>
+
+    <div class="solution">
+        <div class="pricing-upper">
+
+            <div class="pricing-main-text">
+                Solution in 3 Easy Steps
+            </div>
+
+            <div class="pricing-text">
+                Explain that your product, service or event can solve anything in 3 easy steps.
+            </div>
+
+        </div>
+
+        <div class="pricing-lower container">
+
+            <div class="features-content" id="features-content2" id="features-content2-for-mobiles">
+                <div class="solution-box">1</div>
+                <p class="pricing-foodname" id="pricing-foodname2">Step</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+
+            <div class="features-content" id="features-content2" id="features-content2-for-mobiles">
+                <div class="solution-box">2</div>
+                <p class="pricing-foodname" id="pricing-foodname2">Step</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+
+            <div class="features-content" id="features-content2" id="features-content2-for-mobiles">
+                <div class="solution-box">3</div>
+                <p class="pricing-foodname" id="pricing-foodname2">Step</p>
+                <p class="pricing-fooddescription">Add short description of the Step 1, so your customers could feel how it's easy to get a solution with your product, service or event</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="albert">
+
+        <div class="albert-content container">
+
+            <div class="albert-left" id="albert-contents">
+                <h3 class="pricing-main-text" id="albert-main-text">Albert Stroller</h3>
+                <p class="pricing-text" id="albert-text">Head Chef/Owner</p>
+                <p class="pricing-fooddescription" id="albert-fooddescription">Born in Brooklyn in 1960, Albert worked in restaurants and as a caterer for years before starting his own business. He and her wife Jane launched a gourmet foods and sandwich shop in 2008. While economic difficulties led them to close
+                    that shop, the pair spun off their popular European dishes inot a business of its own!</p>
+
+
+                <div class="albert-networks">
+                    <i class="fab fa-facebook-f" id="follow-us-networks"></i>
+                    <i class="fab fa-twitter" id="follow-us-networks"></i>
+                    <i class="fab fa-pinterest" id="follow-us-networks"></i>
+                    <i class="fab fa-linkedin-in" id="follow-us-networks"></i>
+                </div>
+
+                <a href="#" class="header-button" id="albert-btn">Contact me</a>
+
+            </div>
+
+            <div class="pricing-main-text" id="albert-contents">
+                <img src="WebCafe/images/widgets/albert.jpg" alt="" class="alberts-main-img">
+            </div>
+        </div>
+
+
+        <div class="albert-content-mobile container">
+
+            <div class="pricing-main-text" id="albert-contents">
+                <img src="WebCafe/images/widgets/albert.jpg" alt="" class="alberts-main-img">
+            </div>
+
+            <div class="albert-left" id="albert-contents">
+                <h3 class="pricing-main-text" id="albert-main-text">Albert Stroller</h3>
+                <p class="pricing-text" id="albert-text">Head Chef/Owner</p>
+                <p class="pricing-fooddescription" id="albert-fooddescription">Born in Brooklyn in 1960, Albert worked in restaurants and as a caterer for years before starting his own business. He and her wife Jane launched a gourmet foods and sandwich shop in 2008. While economic difficulties led them to close
+                    that shop, the pair spun off their popular European dishes inot a business of its own!</p>
+
+
+                <div class="albert-networks">
+                    <i class="fab fa-facebook-f" id="follow-us-networks"></i>
+                    <i class="fab fa-twitter" id="follow-us-networks"></i>
+                    <i class="fab fa-pinterest" id="follow-us-networks"></i>
+                    <i class="fab fa-linkedin-in" id="follow-us-networks"></i>
+                </div>
+
+                <a href="#" class="header-button">Contact me</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="advert-cities container">
+        <div class="cities-desc">
+            <img src="WebCafe/images/widgets/carnumbers1.png" alt="photo-cities" class="photo-cities-carnumbers">
+
+            <div class="cities-texts">
+                <div class="ciites-main-text">
+                    Vintage California
+                </div>
+
+                <div class="cities-second-text">
+                    There are many variations of passages of company Vintage California.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cities-desc">
+            <img src="WebCafe/images/widgets/carnumbers2.png" alt="photo-cities" class="photo-cities-carnumbers">
+
+            <div class="cities-texts">
+                <div class="ciites-main-text">
+                    New York Tourner
+                </div>
+
+                <div class="cities-second-text">
+                    There are many variations of passages of company New York Tourner.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cities-desc">
+            <img src="WebCafe/images/widgets/carnumbers3.png" alt="photo-cities" class="photo-cities-carnumbers">
+
+            <div class="cities-texts">
+                <div class="ciites-main-text">
+                    Retro Beats
+                </div>
+
+                <div class="cities-second-text">
+                    There are many variations of passages of company Retro Beats.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cities-desc">
+            <img src="WebCafe/images/widgets/carnumbers4.png" alt="photo-cities" class="photo-cities-carnumbers">
+
+            <div class="cities-texts">
+                <div class="ciites-main-text">
+                    Retro Press
+                </div>
+
+                <div class="cities-second-text">
+                    There are many variations of passages of company Retro Press.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cities-desc">
+            <img src="WebCafe/images/widgets/carnumbers5.png" alt="photo-cities" class="photo-cities-carnumbers">
+
+            <div class="cities-texts">
+                <div class="ciites-main-text">
+                    Jameson Brand
+                </div>
+
+                <div class="cities-second-text">
+                    There are many variations of passages of company Jameson Brand.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cities-desc">
+            <img src="WebCafe/images/widgets/carnumbers6.png" alt="photo-cities" class="photo-cities-carnumbers">
+
+            <div class="cities-texts">
+                <div class="ciites-main-text">
+                    John Oaks
+                </div>
+
+                <div class="cities-second-text">
+                    There are many variations of passages of company John Oaks.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hours-stat-bg">
+        <div class="hours-stat">
+            <div class="hours-stat-texts">
+                <h2 class="hours-upper-text">
+                    People Believe Other People
+                </h2>
+
+                <p class="hours-middle-text">
+                    Let your visitors know about your happy customers
+                </p>
+            </div>
+
+            <div class="hours-boxes">
+
+                <div class="hour-stat-box">
+                    <h2 class="hour-stat-box-number" id="days"></h2>
+                    <p class="hour-stat-box-decs">Days</p>
+                </div>
+
+                <div class="hours-between-colon">
+                    :
+                </div>
+
+                <div class="hour-stat-box">
+                    <h2 class="hour-stat-box-number" id="hours"></h2>
+                    <p class="hour-stat-box-decs">hours</p>
+                </div>
+
+                <div class="hours-between-colon">
+                    :
+                </div>
+
+                <div class="hour-stat-box">
+                    <h2 class="hour-stat-box-number" id="minutes"></h2>
+                    <p class="hour-stat-box-decs">minutes</p>
+                </div>
+
+                <div class="hours-between-colon">
+                    :
+                </div>
+
+                <div class="hour-stat-box">
+                    <h2 class="hour-stat-box-number" id="seconds"></h2>
+                    <p class="hour-stat-box-decs">seconds</p>
+                </div>
+
+                <!-- <p id="days"></p>
+                <p id="hours"></p>
+                <p id="mins"></p>
+                <p id="secs"></p>
+                <h2 id="end"></h2> -->
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase container">
+
+        <div class="pricing-upper">
+
+            <div class="pricing-main-text">
+                Showcase Your Team
+            </div>
+
+            <div class="pricing-text">
+                Show the faces to make your project more trustworthy.
+            </div>
+
+        </div>
+
+        <div class="showercase-lower-content">
+            <div class="showcase-lower">
+                <img src="WebCafe/images/widgets/showcase1.jpg" alt="showcase photo" class="showcase-main-images">
+                <div class="ciites-main-text">Melanie Lowe</div>
+                <h3 class="showcase-text-second">Desserts Sous Cheif</h3>
+                <p class="showcase-text">Melanie has a sweet tooth for anything.. sweet! That comes natural, as she was born in Paris.</p>
+                <div class="showcase-networks">
+                    <i class="fab fa-facebook-f" id="follow-us-networks"></i>
+                    <i class="fab fa-twitter" id="follow-us-networks"></i>
+                    <i class="fab fa-pinterest" id="follow-us-networks"></i>
+                    <i class="fab fa-linkedin-in" id="follow-us-networks"></i>
+                </div>
+            </div>
+
+            <div class="showcase-lower">
+                <img src="WebCafe/images/widgets/showcase2.jpg" alt="showcase photo" class="showcase-main-images">
+                <div class="ciites-main-text">Gary Fiships</div>
+                <h3 class="showcase-text-second">Chief Waiter</h3>
+                <p class="showcase-text">Gary works at Betasso longer, than anyone else. He's responsible for delighting you with anything nice.</p>
+                <div class="showcase-networks">
+                    <i class="fab fa-facebook-f" id="follow-us-networks"></i>
+                    <i class="fab fa-twitter" id="follow-us-networks"></i>
+                    <i class="fab fa-pinterest" id="follow-us-networks"></i>
+                    <i class="fab fa-linkedin-in" id="follow-us-networks"></i>
+                </div>
+            </div>
+
+
+            <div class="showcase-lower">
+                <img src="WebCafe/images/widgets/showcase3.jpg" alt="showcase photo" class="showcase-main-images">
+                <div class="ciites-main-text">Mary Winford</div>
+                <h3 class="showcase-text-second">Saucier Sous Chief</h3>
+                <p class="showcase-text">Mary curates our delicious collection of sauces. She's a master for preparing meat, fish and vegetable.</p>
+                <div class="showcase-networks">
+                    <i class="fab fa-facebook-f" id="follow-us-networks"></i>
+                    <i class="fab fa-twitter" id="follow-us-networks"></i>
+                    <i class="fab fa-pinterest" id="follow-us-networks"></i>
+                    <i class="fab fa-linkedin-in" id="follow-us-networks"></i>
+                </div>
+            </div>
+
+            <div class="showcase-lower">
+                <img src="WebCafe/images/widgets/showcase4.jpg" alt="showcase photo" class="showcase-main-images">
+                <div class="ciites-main-text" id="showercase-main-text">Gary Benson</div>
+                <h3 class="showcase-text-second">Chief</h3>
+                <p class="showcase-text">Gary was adopted by a Swedish family and cultivated a deep love for cooking.</p>
+                <div class="showcase-networks">
+                    <i class="fab fa-facebook-f" id="follow-us-networks"></i>
+                    <i class="fab fa-twitter" id="follow-us-networks"></i>
+                    <i class="fab fa-pinterest" id="follow-us-networks"></i>
+                    <i class="fab fa-linkedin-in" id="follow-us-networks"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="food-gallery">
+
+        <div class="food-gallery-imgs-wrap" onclick="OpenGalleryPhoto(1)">
+            <img src="WebCafe/images/widgets/gallery1.jpg" alt="food" class="food-gallery-img">
+
+            <div class="food-gallery-hovercontent">
+                <i class="fas fa-utensils"></i>
+            </div>
+
+        </div>
+
+        <div class="food-gallery-imgs-wrap" onclick="OpenGalleryPhoto(2)">
+            <img src="WebCafe/images/widgets/gallery2.jpg" alt="food" class="food-gallery-img">
+            <div class="food-gallery-hovercontent">
+                <i class="fas fa-utensils"></i>
+            </div>
+        </div>
+
+        <div class="food-gallery-imgs-wrap" onclick="OpenGalleryPhoto(3)">
+            <img src="WebCafe/images/widgets/gallery3.jpg" alt="food" class="food-gallery-img">
+            <div class="food-gallery-hovercontent">
+                <i class="fas fa-utensils"></i>
+            </div>
+        </div>
+
+        <div class="food-gallery-imgs-wrap" id="food-gallery-last-img" onclick="OpenGalleryPhoto(4)">
+            <img src="WebCafe/images/widgets/gallery4.jpg" alt="food" class="food-gallery-img">
+            <div class="food-gallery-hovercontent">
+                <i class="fas fa-utensils"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about-feature">
+        <div class="pricing-upper">
+
+            <div class="pricing-main-text">
+                Tell About Your Featured Product
+            </div>
+
+            <div class="pricing-text">
+                Your visitors shoul know about your best product.
+            </div>
+
+        </div>
+
+        <div class="wrap-for-main-image-about-tell">
+            <img src="WebCafe/images/widgets/about-feature-img.jpg" alt="feature-food" class="about-feature-main-image">
+        </div>
+
+
+        <div class="about-feature-middle-upper">
+
+            <div class="about-feature-main-text">
+                Tell About Your Featured Product
+            </div>
+
+            <div class="about-feature-text">
+                Your visitors shoul know about your best product.
+            </div>
+
+        </div>
+
+        <p class="about-feature-text-lower">There's nothing can hold me when I hold you. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. No phone no lights no motor car not a single luxury. Like Robinson Crusoe it's primitive
+            as can be. Goodbye gray sky hello blue.
+        </p>
+
+        <p class="pricing-foodcost" id="about-feature-cost">$7.00</p>
+        <a href="#" class="header-button" id="about-feature-order">Order now</a>
+
+    </div>
+
+    <div class="just-answer-bg">
+
+        <div class="just-answer">
+
+            <div class="pricing-upper">
+
+                <div class="pricing-main-text">
+                    Just Answer the Questions
+                </div>
+
+                <div class="pricing-text">
+                    And you'll get more conversions
+                </div>
+
+            </div>
+
+            <div class="questions-boxes" onclick="OpenQuestionsDescription(1)">
+                <p class="questions-boxes-words">Question 1</p> <i class=" fas fa-chevron-right" id="questions-box"></i>
+            </div>
+
+            <div class="questions-description1" id="questions-description">Think about most common questions about your project, product or event and answer them. It will help your visitors to become to our customers.</div>
+
+            <div class="questions-boxes" onclick="OpenQuestionsDescription(2)">
+                <p class="questions-boxes-words">Question 2</p> <i class=" fas fa-chevron-right" id="questions-box"></i>
+            </div>
+
+            <div class="questions-description2" id="questions-description">Think about most common questions about your project, product or event and answer them. It will help your visitors to become to our customers.</div>
+
+            <div class="questions-boxes" onclick="OpenQuestionsDescription(3)">
+                <p class="questions-boxes-words">Question 3</p> <i class=" fas fa-chevron-right" id="questions-box"></i>
+            </div>
+
+            <div class="questions-description3" id="questions-description">Think about most common questions about your project, product or event and answer them. It will help your visitors to become to our customers.</div>
+
+            <div class="questions-boxes" onclick="OpenQuestionsDescription(4)">
+                <p class="questions-boxes-words">Question 4</p> <i class=" fas fa-chevron-right" id="questions-box"></i>
+            </div>
+
+            <div class="questions-description4" id="questions-description">Think about most common questions about your project, product or event and answer them. It will help your visitors to become to our customers.</div>
+
+        </div>
+
+    </div>
+
+    <div class="people-love-numbers">
+        <div class="pricing-upper">
+
+            <div class="pricing-main-text">
+                People Love Numbers
+            </div>
+
+            <div class="pricing-text">
+                Boast the number of happy clients or ticket bought
+            </div>
+
+        </div>
+
+        <div class="people-love-statistics-wrap container">
+            <div class="lower-statistics-people-love">
+                <h2 class="people-love-statistics-numbers">475</h2>
+                <p class="people-love-words">Chicken Served</p>
+            </div>
+
+            <div class="lower-statistics-people-love">
+                <h2 class="people-love-statistics-numbers">1854</h2>
+                <p class="people-love-words">Fish Fried</p>
+            </div>
+
+            <div class="lower-statistics-people-love">
+                <h2 class="people-love-statistics-numbers">145 </h2>
+                <p class="people-love-words">Our Chefs </p>
+            </div>
+
+            <div class="lower-statistics-people-love">
+                <h2 class="people-love-statistics-numbers">2175 </h2>
+                <p class="people-love-words">Soup Served </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="timeline-of-project">
+        <div class="timeline-of-project-content container">
+            <div class="pricing-upper">
+
+                <div class="pricing-main-text">
+                    Show The Timeline of Your Project
+                </div>
+
+                <div class="pricing-text">
+                    People will trust your if they see the plan
+                </div>
+
+            </div>
+
+            <div class="timeline-lower-part">
+                <div class="timeline-lower-first">
+                    <h2 class="timeline-lower-first-text" onclick="showTimeLinePhotos(1)">September 2016</h2>
+                    <h2 class="timeline-lower-first-text" onclick="showTimeLinePhotos(2)">October 2016</h2>
+                    <h2 class="timeline-lower-first-text" onclick="showTimeLinePhotos(3)">September 2016</h2>
+                </div>
+
+
+                <img src="WebCafe/images/widgets/gallery3.jpg" alt="logos" class="timeline-lower-second">
+
+                <div class="timeline-lower-third">
+                    <div class="timeline-lower-third-text1">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                        sem.
+                    </div>
+
+                    <div class="timeline-lower-third-text2">
+                        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                        semper nisi.
+                    </div>
+
+                    <div class="timeline-lower-third-text3">
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="your-career-bg">
+            <div class="your-career container">
+                <div class="pricing-upper">
+
+                    <div class="pricing-main-text">
+                        Your Career Starts Here
+                    </div>
+
+                    <div class="pricing-text">
+                        Find people for your project
+                    </div>
+
+                </div>
+
+                <img src="WebCafe/images/widgets/your-career-main.jpg" alt="career" class="your-career-photo">
+
+
+                <div class="your-career-lower">
+                    <div class="your-career-lower-text">
+                        <h2 class="your-career-main-text">Senior Job Position</h2>
+                        <p class="your-career-main-lower-text">We're looking for experienced professionals with personal point of view and problem technique. </p>
+                    </div>
+
+                    <div class="your-career-lower-text">
+                        <h2 class="your-career-main-text">Middle Job Position</h2>
+                        <p class="your-career-main-lower-text">There are a few"hot" vacancies in our company. Don;t miss your chance and send your CV. </p>
+                    </div>
+
+                    <div class="your-career-lower-text">
+                        <h2 class="your-career-main-text">Junior Job Position </h2>
+                        <p class="your-career-main-lower-text">Don't gave enough skills, but enthusiastic about becoming a professional? Join us! </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="belive-other-people-bg">
+                <div class="belive-other-people">
+                    <div class="pricing-upper">
+
+                        <div class="pricing-main-text">
+                            People Believe Other People
+                        </div>
+
+                        <div class="pricing-text">
+                            Let your visitors know about your happy customers
+
+                        </div>
+
+                    </div>
+
+
+                    <img src="WebCafe/images/widgets/belive-people-girl3.png" alt="girl" class="belive-people-girl">
+
+
+                    <div class="quote-left"><i class="fas fa-quote-left" id="quotes-left"></i></div>
+                    <h2 class="belive-other-people-text2">Kate Murray</h2>
+                    <p class="belive-other-people-text3">Clients</p>
+
+                    <p class="belive-other-people-text4">Amazing stakes with the special sauce that they would have never give up, even at the point of a gun. Also, thanks to great service. Good job!</p>
+
+                    <div class="belive-other-circles">
+                        <div class="circles-belive" onclick="changeGirlsImage(1)">
+
+                        </div>
+
+                        <div class="circles-belive" onclick="changeGirlsImage(2)">
+
+                        </div>
+
+                        <div class="circles-belive" onclick="changeGirlsImage(3)">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="your-contacts-bg">
+            <div class="pricing-upper">
+
+                <div class="pricing-main-text">
+                    Put Your Contacts Here
+                </div>
+
+                <div class="pricing-text">
+                    Don't miss a chance to talk with your visitors, buyers, clients
+                </div>
+
+            </div>
+
+            <div class="your-contacts-lower">
+                <div class="your-contact-lower-left">
+                    <div class="your-contact-lower-objects">
+                        <h2 class="your-contact-lower-left-maintext">Address: </h2>
+                        <p class="your-contact-lower-left-text">4801 South University Drive Suite 237, Ft. Lauderdale, FL 33328</p>
+                    </div>
+
+                    <div class="your-contact-lower-objects">
+                        <h2 class="your-contact-lower-left-maintext">Phone: </h2>
+                        <p class="your-contact-lower-left-text">(123) 456-7890</p>
+                    </div>
+
+                    <div class="your-contact-lower-objects">
+                        <h2 class="your-contact-lower-left-maintext">Email: </h2>
+                        <p class="your-contact-lower-left-text">contacts@motocms.com</p>
+                    </div>
+
+                    <div class="your-contact-lower-objects">
+                        <h2 class="your-contact-lower-left-maintext">We are open: </h2>
+                        <p class="your-contact-lower-left-text">Mn-Fr: 10am - 8pm</p>
+                    </div>
+
+                </div>
+
+                <div class="your-contact-lower-right">
+                    <textarea name="name" id="" cols="30" rows="1" placeholder="Name: *" class="textarea"></textarea>
+                    <textarea name="Email: *" id="" cols="30" rows="1" placeholder="Email:" class="textarea"></textarea>
+                    <textarea name="Phone:" id="" cols="30" rows="1" placeholder="Phone:" class="textarea"></textarea>
+                    <textarea name="Message: *" id="" cols="30" rows="100" placeholder="Message:" class="textarea" id="textarea"></textarea>
+                    <a href="#" class="your-contact-button">Send</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bg">
+        <div class="footer-content container">
+            <div class="footer-left">
+                <div class="logo-name">
+                    <img src="WebCafe/images/widgets/logoFirst.png" alt="logo" class="logo-img">
+                    <h2 class=" header-main-logo">MyCafe</h2>
+                </div>
+
+                <h2 class="footer-main-text">We are open:</h2>
+                <p class="footer-text">Mn-Fr: 10am - 8pm </p>
+                <p class="footer-text-second">Copyright © 2018. All rights reserved. Designed by MotoCMS.com</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194156103!2d-74.03927096447748!3d40.759040329405195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2z0JzQsNC90YXRjdGC0YLQtdC9LCDQndGM0Y4t0JnQvtGA0LosINCQ0LzQtdGA0LjQutCwINKa0rHRgNCw0LzQsCDQqNGC0LDRgtGC0LDRgNGL!5e0!3m2!1skk!2skz!4v1611998409321!5m2!1skk!2skz"
+                width="600" height="450" frameborder="0" style="border:0;" class="footer-map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+    <script src="WebCafe/js/firstWindowScript.js"></script>
+</body>
+
+</html>

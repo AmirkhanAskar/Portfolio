@@ -1,0 +1,390 @@
+body{
+    overflow-y: hidden;
+ } 
+
+.going-out {
+    padding-left: 100%;
+    position: relative;}
+
+.going-out-btn {
+    font-size: 25px;
+    color: gray;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal.none{
+    display: none;
+    /* opacity: 0; */
+}
+
+.modal-content {
+    width: 65%;
+    height: 380px;
+    position: relative;
+}
+
+.modal-left-content {
+    width: 50%;
+    height: 380px;
+    background-color: white;
+    position: absolute;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.modal-left-main-text {
+    font-size: 30px;
+    color: #ba2a22;
+    left: 5px;
+    font-family: 'Oleo Script Swash Caps';
+    left: 0;
+    padding-top: 80px;
+}
+
+.modal-left-second-text {
+    font-size: 35px;
+    color: #0a0909;
+    left: 5px;
+    font-family: 'Oleo Script Swash Caps';
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.modal-left-text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #a1a0a0;
+    line-height: 1.5;
+    width: 90%;
+    padding-bottom: 15px;
+}
+
+.textarea-of-modal {
+    border: none;
+    border-bottom: 1px solid #ba2a22;
+}
+
+.modal-header-btn {
+    margin-top: 30px;
+}
+
+
+/* #modal-main-text {
+    font-size: 30px;
+    color: #ba2a22;
+    left: 5px;
+} */
+
+.main-modal-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-left {
+    width: 50%;
+    height: 380px;
+    background-color: grey;
+}
+
+.modal-photos{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+}
+
+.modal-photos-content{
+    width: 68%;
+    height: 380px;
+    margin: 0 auto;
+}
+
+.close-btn{
+    padding-left: 100%;
+    position: relative;
+}
+
+.closing-btn{
+    font-size: 25px;
+    color: gray;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+}
+
+
+.closing-btn:hover{
+    background-color: red;
+}
+
+.modal-photos-configuration{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-photos-left{
+    font-size: 45px;
+    color: white;
+    transition: .5s;
+
+}
+
+.modal-photos-left:hover{
+    color: red;
+}
+
+.header {
+    background-image: url(../../images/backgrounds/bg1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 120vh;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.logo-name {
+    display: flex;
+    width: 11%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    text-align: center;
+    top: 0;
+}
+
+.header-main-logo {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.navs-main {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.navs-main-buttons {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navs-main-buttons:hover {
+    color: #ba2a22;
+}
+
+.navs-phone-number {
+    display: flex;
+    width: 155px;
+    justify-content: space-between;
+}
+
+#header-phone {
+    color: #ba2a22;
+    font-size: 16px;
+}
+
+.header-phone-main {
+    color: #ffffff;
+    transition: .5s;
+}
+
+.header-phone-main:hover {
+    color: #ba2a22;
+}
+
+.header-middle {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 220px;
+    line-height: 1.5;
+}
+
+.header-middle-maintext {
+    font-size: 60px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #ffffff;
+}
+
+.header-middle-text {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.header-button {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    width: 100px;
+    height: 100vh;
+    background-color: #ba2a22;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    transition: .5s;
+}
+
+.header-button:hover {
+    background-color: #989da2;
+}
+
+.mobile-navs .fas {
+    display: none;
+    color: white;
+    font-size: 16px;
+}
+
+.mobile-navs-options{
+    position: absolute;
+    width: 50%;
+    height: 150px;
+    background-color: #ba2a22;
+    left: 180px;
+    display: none;
+}
+
+.mobile-navs-options-words{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+@media(max-width: 1050px) {
+    .navs-main {
+        display: none;
+    }
+    .mobile-navs {
+        display: block;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .mobile-navs:hover {
+        color: #ba2a22;
+    }
+}
+
+@media(max-width: 840px) {
+    .header-middle-maintext {
+        font-size: 50px;
+        font-family: 'Oleo Script Swash Caps', cursive;
+        color: #ffffff;
+    }
+    .header-middle-text {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 700px) {
+    .header-middle-maintext {
+        font-size: 40px;
+        font-family: 'Oleo Script Swash Caps', cursive;
+        color: #ffffff;
+    }
+    .header-middle-text {
+        font-size: 15px;
+    }
+    .navs {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        text-align: center;
+    }
+    .logo-name {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .navs-main {
+        width: 100%;
+        padding-top: 100px;
+    }
+    .navs-phone-number {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+
+    .modal-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 600px;
+        bottom: 2%;
+    }
+
+    .modal-left-content{
+        width: 100%;
+        height: 320px;
+    }
+
+    .main-modal-img{
+        width: 101.7%;
+        padding-top: 320px;
+    }
+
+    .main-modal-img {
+        height: 50%;
+    }
+
+    .going-out {
+        padding-left: 102%;
+    }
+
+
+}
+
+.modal-photos-configuration img{
+    width: 100%;
+    height: 100%;
+}
